@@ -1,4 +1,4 @@
-.main-wrapper {
+.wrapper {
     margin: 0 auto;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 10px;
@@ -11,7 +11,8 @@
     margin: 10px auto 10px;
     padding: 10px;
     font-size: 18px;
-    background: #f8f4f4;
+    background: #94f3f394;
+    resize: none;
 
 }
 
@@ -22,9 +23,10 @@
     padding: 10px;
     padding-left: 0;
     padding-bottom: 0;
-    background: #8b8a8a;
+    background: #07495579;
     border: 2px solid #181717;
     border-radius: 5px;
+    
 }
 
 .keyboard__keys {
@@ -32,7 +34,7 @@
 }
 
 .keyboard__key {
-    width: 6%;
+    width: 40px;
     height: 40px;
     max-width: 90px;
     margin: 3px;
@@ -57,13 +59,13 @@
 }
 
 .keyboard__key-wide {
-    width: 12%;
+    width: 50px;
 }
 
-.keyboard__key-extra-wide{
-    width: 18%;
+.keyboard__key-extra-wide {
+    width: 60px;
 }
 
 .keyboard__key-space {
-    width: 36%;
+    width: 70px;
 }
