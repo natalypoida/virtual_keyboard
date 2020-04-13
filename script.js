@@ -1,28 +1,27 @@
-const buttons = [
-    
-
-];
 
 const virtKeyboard = {
     elements: {
        main: null,
        textarea: null,
        keyboardKeys: null,
+       keys: [],
     },
 
-    properties: {
-        capsLock: false,
-        value: '',
-        ctrlShift: false
+   /* properties: {
+        capsLock = false,
+        value = '',
+        ctrlShift = false,
     },
     
 
     eventHandlers: {
-        oninput = null,
-        onclick = null,
-        onkeypress = null
-    },
+        oninput: null,
+        onclick:  null,
+        onkeypress:  null,
+    },*/
     
+   
+
     init() {
         this.elements.main =  document.createElement("div");
         this.elements.textarea = document.createElement("textarea");
@@ -30,9 +29,10 @@ const virtKeyboard = {
 
         this.elements.main.classList.add("wrapper");
         this.elements.textarea.classList.add("textarea");
-        this.elements.keyboardKeys.classList.add("keyboard__keys");
+        this.elements.keyboardKeys.classList.add("keyboard");
 
-        this.elements.main.appendChild(this.elements.textarea, this.elements.keyboardKeys);
+        this.elements.main.appendChild(this.elements.textarea);
+        this.elements.main.appendChild(this.elements.keyboardKeys);
         document.body.appendChild(this.elements.main);
 
 
@@ -40,7 +40,7 @@ const virtKeyboard = {
     },
 
     _createKeys() {
-
+        
     },
 
     _eventOn(handlerName) {
@@ -59,6 +59,7 @@ const virtKeyboard = {
     },
 
 };
+
   
 window.addEventListener("DOMContentLoaded", function() {
  virtKeyboard.init();
